@@ -1,20 +1,19 @@
 using Soenneker.Discord.OpenApiClientUtil.Abstract;
-using Soenneker.Tests.FixturedUnit;
-using Xunit;
+using Soenneker.Tests.HostedUnit;
 
 namespace Soenneker.Discord.OpenApiClientUtil.Tests;
 
-[Collection("Collection")]
-public sealed class DiscordOpenApiClientUtilTests : FixturedUnitTest
+[ClassDataSource<Host>(Shared = SharedType.PerTestSession)]
+public sealed class DiscordOpenApiClientUtilTests : HostedUnitTest
 {
     private readonly IDiscordOpenApiClientUtil _openapiclientutil;
 
-    public DiscordOpenApiClientUtilTests(Fixture fixture, ITestOutputHelper output) : base(fixture, output)
+    public DiscordOpenApiClientUtilTests(Host host) : base(host)
     {
         _openapiclientutil = Resolve<IDiscordOpenApiClientUtil>(true);
     }
 
-    [Fact]
+    [Test]
     public void Default()
     {
 
