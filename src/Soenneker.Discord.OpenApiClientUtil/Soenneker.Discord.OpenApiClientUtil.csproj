@@ -42,7 +42,7 @@
 
     <ItemGroup>
         <PackageReference Include="Soenneker.Kiota.GenericAuthenticationProvider" Version="4.0.35" />
-        <PackageReference Include="Soenneker.Discord.HttpClients" Version="4.0.48" />
+        <PackageReference Include="Soenneker.Discord.HttpClients" Version="4.0.50" />
         <PackageReference Include="Soenneker.Discord.OpenApiClient" Version="4.0.31" />
     </ItemGroup>
 </Project>
