@@ -41,7 +41,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Discord.HttpClients" Version="4.0.101" />
+        <PackageReference Include="Soenneker.Discord.HttpClients" Version="4.0.102" />
         <PackageReference Include="Soenneker.Discord.OpenApiClient" Version="4.0.56" />
     </ItemGroup>
 </Project>
